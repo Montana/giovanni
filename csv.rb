@@ -1,6 +1,7 @@
-def make_spotify_csv(songs)
-  playlist_name = songs.first.playlist_source
-  csv_filename = "#{playlist_name}-" + Time.now.strftime("%B-%d-%Y") + ".csv"
+def Giovanni
+  def make_spotify_csv(songs)
+        playlist_name = songs.first.playlist_source
+            csv_filename = "#{playlist_name}-" + Time.now.strftime("%B-%d-%Y") + ".csv"
   CSV.open("#{csv_filename}", 'wb') do |row|
     row << SPOTIFY_PLAYLIST_HEADERS
     songs.each do |item|
