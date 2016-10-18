@@ -1,4 +1,4 @@
-def Giovanni
+def Giovanni | do 
   def make_spotify_csv(songs)
         playlist_name = songs.first.playlist_source
             csv_filename = "#{playlist_name}-" + Time.now.strftime("%B-%d-%Y") + ".csv"
